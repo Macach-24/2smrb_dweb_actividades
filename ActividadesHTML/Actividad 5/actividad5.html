@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5 - Formulario</title>
+</head>
+
+
+<style>
+    /* Comentario */
+h1 {
+    color:rgb(123, 25, 25);
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1 {
+    border: solid;
+}
+
+.obligatorio {
+    color: brown;
+    font-weight: bold;
+}
+
+#userName {
+    background-color: rgb(235, 158, 158);
+    border: 5;
+    border-radius: 11px ;
+
+}
+
+.flotante  {
+    float: left;
+    background-color: rgb(255, 166, 0);
+    margin-right: 30px;
+}
+</style>
+
+
+<body style="background-color: rgb(249, 255, 195);">
+<header>
+    <h1>Actividad 5 - Formulario en HTML</h1>
+        <nav>
+            <ul>
+                <li class="flotante">Enlace 1</li>
+                <li>Enlace 2</li>
+                <li>Enlace 3</li>
+                <li>Enlace 4</li>
+            </ul>
+        </nav>
+</header>
+
+
+
+
+<main>
+    <section>
+        <h2>Controles de formulario</h2>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="userName" class="obligatorio">Nombre:</label>
+                <input type="text" name="userName" id="userName" required>
+                <br>
+                <br>
+                <label for="email" class="obligatorio">Correo electronico:</label>
+                <input type="text" name="email" id="email" required>
+                <br>
+                <br>
+                <label for="url">URL: </label>
+                <input type="url" name="url" id="url">
+                <br>
+                <br>
+                <label for="ciudad">Ciudad:</label>
+                <select name="ciudad" id="ciudad">
+                    <option value="CO">CÓRDOBA</option>
+                    <option value="CA">CADÍZ</option>
+                    <option value="SE">SEVILLA</option>
+                    <option value="MA">MÁLAGA</option>
+                    <option value="HU">HUELVA</option>
+                    <option value="AL">ALMERIA</option>
+                    <option value="JA">JAEN</option>
+                    <option value="GR">GRANADA</option>
+                </select>
+                <br>
+                <br>
+                <label for="ciudadlis">Eligue ciudad:</label>
+                <input type="text" name="ciudadlis" id="ciudadlis">
+                <datalist>
+                    <option value="CÓRDOBA"></option>
+                    <option value="SEVILLA"></option>
+                    <option value="CADÍZ"></option>
+                </datalist>
+                </label>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos</legend>
+                <label for="fecha">Fecha:</label>
+                <input type="date" name="fecha" id="fecha">
+                <br>
+                <br>
+                <label for="tiempo">Tiempo:</label>
+                <input type="time" name="tiempo" id="tiempo">
+                <br>
+                <br>
+                <label for="fechahora">Fecha y hora:</label>
+                <input type="datetime" name="fechahora" id="fechahora">
+                <br>
+                <br>
+                <label for="mes">Mes:</label>
+                <input type="month" name="mes" id="mes">
+
+            </fieldset>
+        </form>
+    </section>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>

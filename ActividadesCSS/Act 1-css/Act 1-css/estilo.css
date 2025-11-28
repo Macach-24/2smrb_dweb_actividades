@@ -1,0 +1,39 @@
+   @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+   @font-face {
+        font-family: 'HeinanFuente';
+        src: url('./heinan/HEINAN-Outline.otf');
+    }
+
+
+body {
+    background-color: lightgray;
+    font-family: sans-serif;
+    margin: 5px;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 300%;
+    font-family: Oswald;
+}
+
+p {
+    margin: 0 10%;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.imagenizq {
+    margin: 0 10px 10px 0;
+    width: 106px;
+    height: 150px;
+    float: left;
+}
+
+h2 {
+    background-color: grey;
+    color: white;
+    padding: 3px 5px;
+    font-family: HeinanFuente;
+}

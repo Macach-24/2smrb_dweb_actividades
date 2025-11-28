@@ -1,0 +1,202 @@
+/* Colores de referencia para var */
+:root {
+    --primary-color: #076890;
+    --primary-color_trasparencia: #07689666;
+    --boton_activo: #78aeff;
+    --color_fondo_caja: #eaf6fb;
+    --color_borde_caja: #006699;
+    --color_fondo_verde: #f0fff0;
+}
+
+/* Estilo que toda la página tendra (Fuente y separacion entre lineas) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+}
+
+/* Define un margen y centra los bloques */
+header,main,footer {
+    max-width:  900px;
+    margin: 0 auto;
+}
+
+/* Estilo de la cabecera (Color de fondo y texto, texto alineado, bordes y margenes) */
+header {
+    background-color: #068cca;
+    color: white;
+    text-align: center;
+    border-bottom: 8px;
+    border-radius: 0 0 4px 4px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.9rem;
+}
+
+/* Estilo de la navegación (Color y margenes */
+nav {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    padding: 0.3rem 0.6rem;
+}
+
+/* Estilo de links de navegación */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+/* Estilo de navegación al pasar el cursor por encima */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Estilo para todas las secciones (Cajas blancas) */
+section {
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(65, 59, 59);
+    border-radius: 8px;
+    margin: 1rem 0 ;
+    padding: 1rem;
+}
+
+/* Estilo del h2 de cada sección */
+section h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo botones */
+.btn, .btn-sec {
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: white;
+    padding:  0.3rem 0.6rem;
+    margin: 0.3rem 0.3rem 0.6rem ;
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Efecto botones al pasar el cursor */
+.btn:hover, .btn-sec:hover {
+    background-color: var(--primary-color_trasparencia);
+    transition: background-color 0.5s;
+}
+
+/* Efecto botones al presionar */
+.btn:active, .btn-sec:active { 
+    background-color: var(--boton_activo);
+}
+
+/* Estilo para los campos de texto (bordes, margenes y radio de esquinas) */
+input[type="text"] {
+    border: 1px solid #999;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+    border-radius: 4px;
+}
+
+/* Efecto al hacer click en el campo de texto */
+input:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+/* Estilo para la lista del contenedor */
+.lista-demo{
+    margin-top: 0.3rem;
+    padding-left: 1.2rem;
+}
+
+/* Estilo para los elementos li dentro de los contenedores */
+.lista-demo li {
+    margin: 0.3rem 0;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+/* Estilo para el primer elemento de la listas de cada contenedor */
+.lista-demo li:first-child {
+    font-weight: bold;
+    color: var(--boton_activo);
+    opacity: 1;
+}
+
+/* Efecto al pasar el cursor sobre un elemento de la lista de cada contenedor*/
+.lista-demo li:hover {
+    opacity: 1;
+}
+
+/* Estilo para la caja de la sección 2 */
+.caja {
+    background-color: var(--color_fondo_caja);
+    border: 3px solid var(--color_borde_caja);
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* Estilo hijo dentro contenedor */
+#contenedor > span {
+    display: inline-block;
+    background-color: var(--color_fondo_caja);
+    border: 1px solid var(--color_borde_caja);
+    padding: 0.3rem;
+    margin-bottom: 1.3rem;
+}
+
+/* Estilo hermano dentro del contenedor */
+#contenedor + p {
+    background-color: var(--color_fondo_verde);
+    border-left: 4px solid green;
+    padding-left: 0.4rem;
+}
+
+/* Para que el contenedor se adapte a los contenedores pequeños */
+.fila::after { 
+    content: ""; 
+    display: block; 
+    clear: both;
+}
+
+/* Estilos de contenedores */
+.box {
+    float: left;
+    width: 100px;
+    height: 80px;
+    border: 3px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* Estilo contenedor 1 */
+.box.b1 {
+    border-top-left-radius: 16px;
+    background-color: #ff9999;
+}
+
+/* Estilo contenedor 2 */
+.box.b2 {
+    border-top-right-radius: 16px;
+    background-color: #ffcc66;
+}
+
+/* Estilo contenedor 3 */
+.box.b3 {
+    border-radius: 16px;
+    background-color: #99cc99;
+}
+
+/* Estilo footer */
+footer {
+    text-align: center;
+    background-color: #d7d7d7;
+    border-top: 3px solid var(--color_borde_caja);
+    font-size: 0.8rem;;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
